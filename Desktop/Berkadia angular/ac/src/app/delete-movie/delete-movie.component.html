@@ -1,0 +1,41 @@
+<div class="jumbotron">
+  <div align='center'>
+      <h1>
+      Welcome To Berkadia
+      </h1>
+  </div>
+	</div>
+Search Movie:<input type="text" name="search" [(ngModel)]="search">
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+      <td>code</td>
+      <td>Movie Name</td>
+      <td>Release Date</td>
+      <td>Rating</td>
+      <td>Language</td>
+      <td>Highlight</td>
+      <td width="275" align="center">Action</td>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let movie of model |filt:search'>
+      <td><a [routerLink]="['/guard',movie.code]">{{movie.code}}</a></td>
+      <td>{{movie.moviename}}</td>
+      <td>{{movie.release_date}}</td>
+      <td>{{movie.rating}}</td>
+      <td>{{movie.language}}</td>
+      <td> <button class="btn btn-primary"(click)='alertMe(movie.rating)'[appHighlight]=" movie.rating">Click Me </button>     
+        
+      <td width="275">
+        <a class="btn btn-danger" (click)="deleteMovie(movie._id)">Delete</a>
+        <a class="btn btn-success"  routerLink="/update/{{movie._id}}">Update</a>
+        <a class="btn btn-success" [routerLink]="['/guard',movie.code]" >Details</a>
+        
+     </tr>
+        
+    </tbody>
+  </table>
+
+
