@@ -6,3 +6,5 @@ Initially Npm install.It install all node modules
  
 Then ng serve 
 Check out localhost:4200 for the details of the movies
+
+
