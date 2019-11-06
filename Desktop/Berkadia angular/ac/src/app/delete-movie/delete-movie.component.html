@@ -26,12 +26,12 @@ Search Movie:<input type="text" name="search" [(ngModel)]="search">
       <td>{{movie.release_date}}</td>
       <td>{{movie.rating}}</td>
       <td>{{movie.language}}</td>
-      <td> <button class="btn btn-primary"(click)='alertMe(movie.rating)'[appHighlight]=" movie.rating">Click Me </button>     
+      <td> <button class="btn btn-primary"(click)='alertMe(movie.rating)'[appHighlight]=" movie.rating">click Me </button>     
         
       <td width="275">
         <a class="btn btn-danger" (click)="deleteMovie(movie._id)">Delete</a>
         <a class="btn btn-success"  routerLink="/update/{{movie._id}}">Update</a>
-        <a class="btn btn-success" [routerLink]="['/guard',movie.code]" >details</a>
+        <a class="btn btn-success" [routerLink]="['/guard',movie.code]" >Details</a>
         
      </tr>
         
