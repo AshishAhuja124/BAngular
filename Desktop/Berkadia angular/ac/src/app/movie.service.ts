@@ -18,7 +18,7 @@ export class MovieService {
     return this.http.put("http://localhost:3000/movies/"+id,info)
     .map(res=>res.json())
   }
-  deleteMovie(id){
+  DeleteMovie(id){
     return this.http.delete("http://localhost:3000/movies/"+id)
     .map(res=>res.json())
   }
