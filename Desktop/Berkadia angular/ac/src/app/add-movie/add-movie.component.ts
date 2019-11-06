@@ -16,7 +16,7 @@ model=new Movie;
 addMovie(){
   this.movieService.addMovie(this.model)
   .subscribe()
-  console.log('movie submitted');
+  console.log('movie is submitted');
 }
   ngOnInit() {
   }
