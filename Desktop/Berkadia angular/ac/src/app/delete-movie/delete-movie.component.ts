@@ -18,7 +18,7 @@ alertMe(val){
 model:Movie
 getMovies(){
   this.movSer.getMovies().subscribe(model=>{this.model=model})
-  console.log('Movie Deleted');
+  console.log('Movie  is Deleted');
 }
 
 deleteMovie(id){
