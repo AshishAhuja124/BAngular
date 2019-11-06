@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MovieService } from '../movie.service';
 import {Movie} from '../movie';
-import'rxjs/add/operator/find'
+//import'rxjs/add/operator/find'
 @Component({
   selector: 'app-guard',
   templateUrl: './guard.component.html',
