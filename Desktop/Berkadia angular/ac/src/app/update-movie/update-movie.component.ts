@@ -27,6 +27,6 @@ getMovies(){
 }
 updateMovie(){
   this.movSer.updateMovie(this.id,this.model).subscribe()
-console.log('updated');
+console.log('Movie is updated');
 }
 }
