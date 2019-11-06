@@ -45,5 +45,5 @@ import { UpdateMovieComponent } from './update-movie/update-movie.component';
   providers: [MovieService,GuardService],
   bootstrap: [AppComponent]
 
-})
+}
 export class AppModule { }
