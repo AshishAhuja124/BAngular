@@ -1,6 +1,3 @@
-# BerkadiaAngular
-
-This project was generated with Angular CLI version 1.6.3.
 
 Initially Npm install.It install all node modules
 
