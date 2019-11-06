@@ -9,7 +9,7 @@ export class GuardService {
   let id = +route.url[1].path;
   console.log(id);
   if (id<2){
-    alert(" movie not available");
+    alert(" movie is not available");
    
     return false;
     
